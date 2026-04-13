@@ -1,0 +1,9 @@
+# Redirect all requests to index.php (optional - not required for this project)
+# Direct file/folder access still works normally
+Options -Indexes
+
+# If you want clean URLs later, uncomment below:
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ index.php?$1 [QSA,L]
